@@ -1,3 +1,4 @@
+/* Navigation */
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,50 +10,48 @@ nav a {
     padding: 20px;
 }
 
+/* Titres */
 h1 {
     color: darkblue;
 }
 
-img {
-    width: 150px;
+/* Image principale dans <main> */
+main img {
+    width: 250px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 10px;
-}
-
-main {
-    max-width: 840px;
-}
-
-aside {
-    width: 22rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
-
-aside img {
-    width: 300px;
-    height: auto;
-}
-
-main img {
-    width: 250px;
-    height: auto;
-}
-
+/* Paragraphe */
 p {
     padding: 0;
 }
 
+/* Section principale */
+main {
+    max-width: 840px;
+}
+
+/* Élément <aside> */
+aside {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Image dans <aside> */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Pied de page */
 footer {
     margin-top: 10px;
     border-top: 1px solid black;
