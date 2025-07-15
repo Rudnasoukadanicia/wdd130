@@ -52,8 +52,10 @@ p {
 
 /* Section principale */
 main {
-    max-width: 840px;
+  max-width: 840px;
+
 }
+
 
 /* Élément <aside> */
 aside {
@@ -74,9 +76,13 @@ aside img {
 }
 
 aside h2 {
-    position: absolute;
+    /* position: absolute; */
     top: 47px;
     left: 150px;
+}
+aside p{
+    text-align: center;
+
 }
 
 main img {
