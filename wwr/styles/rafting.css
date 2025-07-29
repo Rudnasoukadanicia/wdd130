@@ -197,6 +197,7 @@ nav ul li a {
 
 iframe {
     width: 65%;
+    border: none;
 }
 address {
     float: right;
