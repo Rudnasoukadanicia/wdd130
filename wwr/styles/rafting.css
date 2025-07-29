@@ -18,7 +18,6 @@ body {
     color: var(--accent1-color);
 }
 
-header,
 main,
 footer {
     width: 840px;
@@ -96,6 +95,8 @@ section img {
 /* last change */
 
 header {
+    width: 840px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -132,6 +133,8 @@ nav ul li a {
     overflow-x: auto;
     gap: 16px;
     padding: 16px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .adventure figure {
@@ -165,12 +168,6 @@ nav ul li a {
     font-size: 1.8rem;
 }
 
-.adventure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .adventure-images {
     display: flex;
     gap: 16px;
@@ -191,7 +188,7 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-.contact-info, .employee, .contact-form {
+.contact-info, .employee {
     background-color: #f9f9f9;
     padding: 1.5rem;
     border-radius: 8px;
