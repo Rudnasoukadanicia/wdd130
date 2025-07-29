@@ -183,3 +183,109 @@ nav ul li a {
 .history h2 {
     text-align: center;
 }
+
+/* last day 28/07/2025 */
+
+.contact-info h1, .employee h1, .contact-form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-info, .employee, .contact-form {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+iframe {
+    width: 65%;
+}
+address {
+    float: right;
+    font-size: 12px;
+}
+
+figcaption {
+    text-align: center;
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+
+.employee-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.employee-card img {
+    width: 175px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.employee-card img:hover{
+    cursor: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+.contact-form {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: auto;
+    padding: 0.50rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--body-font);
+    color: #158A89;
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    
+    
+}
+
+
+input[type="checkbox"] label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 0.75rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+} 
