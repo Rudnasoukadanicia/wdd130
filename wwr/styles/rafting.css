@@ -15,7 +15,8 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 main,
@@ -101,7 +102,7 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     padding: 10px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 
 }
 
@@ -123,8 +124,9 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
+    
 }
 
 .adventure {
@@ -153,7 +155,11 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--secondary-color);
 }
 
 .socialmedia {
@@ -188,102 +194,132 @@ nav ul li a {
     margin-bottom: 1rem;
 }
 
-.contact-info, .employee {
+.employee {
     background-color: #f9f9f9;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.titre {
+    grid-column: 1 / -1; /* occupe toute la largeur */
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 iframe {
-    width: 65%;
-    border: none;
+   border: none;
+    padding: 1rem;
 }
+
 address {
-    float: right;
-    font-size: 12px;
+  font-size: 14px;
+  margin-top: 1rem;
 }
+
 
 figcaption {
     text-align: center;
-    color: var(--accent2-color);
+    color: var(--primary-color); 
     font-weight: bold;
 }
 
-
 .employee-card {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .employee-card img {
     width: 175px;
     height: auto;
     border-radius: 10px;
 }
 
-.employee-card img:hover{
-    cursor: none;
-    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
-    width: 150px;
+.employee-card figure {
+  width: 200px;
+  text-align: center;
 }
+
+.employee-card img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+} 
+
 .contact-form {
-    background-color: var(--primary-color);
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-    width: 50%;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  width: 70%;   
+  margin: 0 auto; 
 }
 
 .contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: auto;
-    padding: 0.50rem;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    font-family: var(--body-font);
-    color: #158A89;
+.contact-form label {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+  grid-column: 1 / span 2;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  margin-bottom: 1rem;
 }
 
 .radio {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    
-    
-}
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+} 
 
 
 input[type="checkbox"] label {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-}
+} 
 
 .contact-form button {
-    align-self: flex-start;
-    padding: 0.75rem 2rem;
-    background-color: var(--accent1-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  grid-column: 1 / -1; /* bouton centré sur les 2 colonnes */
+  justify-self: center;
+  padding: 0.8rem 2rem;
+  background-color: var(--accent1-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
 .contact-form button:hover {
-    background-color: var(--secondary-color);
-    color: var(--accent1-color);
-} 
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+}
