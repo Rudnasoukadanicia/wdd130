@@ -308,18 +308,17 @@ input[type="checkbox"] label {
 } 
 
 .contact-form button {
-  grid-column: 1 / -1; /* bouton centré sur les 2 colonnes */
-  justify-self: center;
-  padding: 0.8rem 2rem;
-  background-color: var(--accent1-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
+    grid-column: 1 / -1; /* bouton centré sur les 2 colonnes */
+    justify-self: center;
+    padding: 0.8rem 2rem;
+    background-color: var(--accent1-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.contact-form button:hover {
-  background-color: var(--secondary-color);
-  color: var(--accent1-color);
+.contact-form button:hover{
+        filter: brightness(0.8);
 }
