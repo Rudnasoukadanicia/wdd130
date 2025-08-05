@@ -7,6 +7,7 @@
     <title>Company Raftings | Contact Us</title>
     <meta name="description" content="Site web rafting - Contact page">
     <meta name="author" content="Rudna Danicia Souka">
+    <link rel="shortcut icon" href="images/z-splash.png">
     <link rel="stylesheet" href="styles/rafting.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,15 +16,17 @@
 
 <body>
     <header>
-        <img src="images/z-splash.png" alt="Rafting Company Logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+       <div class="header">
+            <img src="images/z-splash.png" alt="Rafting Company Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="contact">
@@ -32,7 +35,7 @@
             <address>
                 <p>Address : 22 Avenue de white rafting</p>
                 <p>Phone number : 000-111-333-666 </p>
-                <p><a href="mailto:">raftingwater01@gmail.com </a></p>
+                <p><a href="mailto:raftingwater01@gmail.com">raftingwater01@gmail.com </a></p>
             </address>
             
             <iframe
@@ -61,7 +64,7 @@
 
         <section class="contact-form">
             <div>
-                <form>
+                <form action="#" method="post">
                     
                     <label for="fullname">Full Name:</label>
                     <input type="text" id="fullname" name="fullname" required>
@@ -69,15 +72,16 @@
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <p>What is the purpose of your message?</p>
-                    <div class="radio">
+                    <fieldset>
+                        <legend>What is the purpose of your message?</legend>
+                    
                         <label><input type="radio" name="purpose" id="inquiry" value="inquiry"> General Inquiry</label>
                         <label><input type="radio" name="purpose" id="reservation" value="reservation"> Reservation Question</label>
                         <label><input type="radio" name="purpose" id="suggestion"  value="suggestion"> Website Suggestion</label>
-                    </div>
+                    
+                    </fieldset>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5"></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Write the message"></textarea>
 
                     <label>
                         <input type="checkbox" name="subscribe" id="subscribe"> Please subscribe me to the monthly newsletter
