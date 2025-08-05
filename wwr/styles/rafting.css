@@ -312,7 +312,6 @@ fieldset {
     flex-direction: column;
     gap: 0.5rem;
     margin-bottom: 1rem;
-    padding: 0 auto;
     border: none;
 }
 
